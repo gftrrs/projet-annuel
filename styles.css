@@ -118,8 +118,7 @@ table {
   color:white;
   font-size: 20px;
   justify-content: center;
-  border: 2px solid #2ecc71; /* Couleur de l'encadrement et épaisseur de la bordure */
-  border-collapse: separate;
+  border-collapse: collapse;
   border-radius: 10px; 
   font-size: 170%;
 }
@@ -149,3 +148,24 @@ td, th {
   text-align: right;
 }
 
+.main-col{
+  text-align: left;
+  padding-left: 30px;
+}
+
+.cart-content{
+  background-color: #2ecc71;
+  width: 75%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  color: #fff;
+  font-weight: 500;
+}
+
+.cart-content td, th {
+  border: 1px solid #188244; /* Couleur de la bordure des cellules */
+  padding: 20px 10px;
+  text-align: center;
+  border-spacing: 10px;
+  
+}
