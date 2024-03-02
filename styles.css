@@ -114,7 +114,6 @@ table {
 
 .table1 {
   width: 75%;
-  margin-left: 5%;
   background-color: #2ecc71;
   color:white;
   font-size: 20px;
@@ -142,8 +141,11 @@ td, th {
   border-radius: 10px; 
   cursor: pointer; 
   font-size: 110%;
-  margin-left: 90%;
-
 }
 
+
+.confirm{
+  padding-top: 20px;
+  text-align: right;
+}
 
