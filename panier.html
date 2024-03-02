@@ -1,84 +1,97 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Pharmacie en ligne</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Pharmacie en ligne</title>
+  <style>
+    /* BEGIN: Responsive and modern styles */
+    .top-bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .search-bar, .user-account, .cart {
+      margin: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .top-bar {
+        flex-direction: column;
+      }
+    }
+    /* END: Responsive and modern styles */
+  </style>
 </head>
 <body>
-    <div class="top-bar">
-        <div class="logo">
-            <!-- Icône pour le logo -->
-            <a href="#"><img src="img/logo.jpg" ></a>
-        </div>
-        <header>
-            <h1>Pharmacicie la famille</h1>
-        </header>
-        <div class="search-bar">
-            <input type="text" placeholder="Rechercher un produit...">
-            <button type="button">Rechercher</button>
-        </div>
-        <div class="user-account">
-            <!-- Icône pour l'espace de connexion -->
-            <a href="connexion.html"><img src="img/compte.png" ></a>
-        </div>
-       
-        <div class="cart">
-            <!-- Icône pour l'espace de panier -->
-            <a href="#"><img src="img/panier.png" ></a>
-        </div>
-    </div>  
-    <div class="logo-container">
-        <!-- Logo -->
-        <img src="img/panier.png" alt="Logo de votre site" class="logo">
-<h1>Mon panier </h1>
+  <div class="top-bar">
+    <div class="logo">
+      <!-- Icône pour le logo -->
+      <a href="#"><img src="img/logo.jpg" ></a>
     </div>
+    <header>
+      <h1>Pharmacicie la famille</h1>
+    </header>
+    <div class="search-bar">
+      <input type="text" placeholder="Rechercher un produit...">
+      <button type="button">Rechercher</button>
+    </div>
+    <div class="user-account">
+      <!-- Icône pour l'espace de connexion -->
+      <a href="connexion.html"><img src="img/compte.png" ></a>
+    </div>
+     
+    <div class="cart">
+      <!-- Icône pour l'espace de panier -->
+      <a href="#"><img src="img/panier.png" ></a>
+    </div>
+  </div>  
+  <div class="logo-container">
+    <!-- Logo -->
+    <img src="img/panier.png" alt="Logo de votre site" class="logo">
+    <h1>Mon panier </h1>
+  </div>
 <br>
 <script>
   fetch('panier.csv')
   .then(response => response.text())
   .then(data => {
-      let lines = data.split('\n');
-      let table = document.querySelector('.table1');
-      lines.forEach(line => {
-          let row = document.createElement('tr');
-          let columns = line.split(',');
-          columns.forEach(column => {
-              let cell = document.createElement('td');
-              cell.textContent = column;
-              row.appendChild(cell);
-          });
-          table.appendChild(row);
+    let lines = data.split('\n');
+    let table = document.querySelector('.table1');
+    lines.forEach(line => {
+      let row = document.createElement('tr');
+      let columns = line.split(',');
+      columns.forEach(column => {
+        let cell = document.createElement('td');
+        cell.textContent = column;
+        row.appendChild(cell);
       });
+      table.appendChild(row);
+    });
   });
 </script>
 <table class="table1">
   <tr>
-    <td>
-      <p>Medicine</p>
-    </td>
-    <td>
-      <p>Date</p>
-    </td>
-    <td>
-      <p>Prix</p>
-    </td>
-    <td>
-      <p>Quantité</p>
-    </td>
+  <td>
+    <p>Medicine</p>
+  </td>
+  <td>
+    <p>Date</p>
+  </td>
+  <td>
+    <p>Prix</p>
+  </td>
+  <td>
+    <p>Quantité</p>
+  </td>
   </tr>
 </table>
 <div class="Confirm">
   <button class="styled-button">Confirm</button>
 </div>
-
-<!-- <table class="table2">
-  <tr>
-    <td>
-      <p>M1</p>
-    </td>
-  <TD>
-    
-  </TD></tr> -->
-    
+</body>
+</html>
