@@ -113,19 +113,18 @@ table {
 }
 
 .table1 {
-  width: 100%;
+  width: 100% ;
   background-color: #2ecc71;
   color:white;
   font-size: 20px;
   justify-content: center;
-  border-collapse: collapse;
   border-radius: 10px; 
-  font-size: 170%;
+  font-size: 100%;
 }
 
 
 /* Styles pour les cellules du tableau */
-td, th {
+.table1 td, th {
   border: 1px solid #2ecc71; /* Couleur de la bordure des cellules */
   padding: 8px;
   text-align: center;
