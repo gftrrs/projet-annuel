@@ -180,3 +180,13 @@ table {
   align-items: flex-end;
   justify-content: center;
 }
+
+.cart-content td:nth-of-type(1) {width:50px;}
+.cart-content td:nth-of-type(2) {width:30px;}
+.cart-content td:nth-of-type(3) {width:20px;}
+.cart-content td:nth-of-type(4) {width:20px;}
+
+.table1 td:nth-of-type(1) {width:50px;}
+.table1 td:nth-of-type(2) {width:30px;}
+.table1 td:nth-of-type(3) {width:20px;}
+.table1 td:nth-of-type(4) {width:20px;}
