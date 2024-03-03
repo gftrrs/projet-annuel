@@ -145,6 +145,7 @@ table {
 .confirm{
   padding-top: 20px;
   text-align: right;
+  vertical-align: bottom;
 }
 
 .main-col{
@@ -176,5 +177,4 @@ table {
 
 .right-col{
   width: 25%;
-  vertical-align: bottom;
 }
