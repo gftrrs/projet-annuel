@@ -150,7 +150,7 @@ table {
 .main-col{
   text-align: left;
   padding-left: 30px;
-  display: table;
+  display: flex;
 }
 
 .cart-content{
@@ -171,17 +171,10 @@ table {
 }
 
 .left-col{
-  float: left;
   width: 75%;
-  display: table-cell;
 }
 
 .right-col{
-  display: table-cell;
-  float: left;
   width: 25%;
-  height: auto;
-  align-items: end; 
-  justify-content: end;
-
+  vertical-align: bottom;
 }
