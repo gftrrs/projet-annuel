@@ -143,9 +143,9 @@ table {
 
 
 .confirm{
+  position: relative;
   padding-top: 20px;
   text-align: right;
-  vertical-align: bottom;
 }
 
 .main-col{
