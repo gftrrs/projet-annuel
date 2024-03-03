@@ -178,5 +178,5 @@ table {
   width: 25%;
   display: flex;
   align-items: flex-end;
-  padding: 0 0 0 20;
+  justify-content: center;
 }
