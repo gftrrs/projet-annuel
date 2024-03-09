@@ -1,3 +1,5 @@
+<? php include 'C:\Users\mon PC\OneDrive\Documents\LUCAS\L3 GBI\projet annuel\connexionBDD.php'?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
