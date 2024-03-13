@@ -199,3 +199,55 @@ table {
 .table1 td:nth-of-type(2) {width:30px;}
 .table1 td:nth-of-type(3) {width:20px;}
 .table1 td:nth-of-type(4) {width:20px;}
+
+
+/* page compte pharmacien 
+
+/* style.css */
+
+/* Réinitialisation des marges et des rembourrages */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles pour la section "MON COMPTE" */
+.account-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.options-list {
+  list-style: none;
+}
+
+.options-list li {
+  margin-bottom: 10px;
+}
+
+.options-list a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #4caf50;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.options-list a:hover {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.icon-container img {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
