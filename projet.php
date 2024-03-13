@@ -13,7 +13,7 @@ include 'C:\Users\mon PC\OneDrive\Documents\LUCAS\L3 GBI\projet annuel\connexion
     <div class="top-bar">
         <div class="logo">
             <!-- Icône pour le logo -->
-            <a href="#"><img src="img/logo.jpg" ></a>
+            <a href="projet.php"><img src="img/logo.jpg" ></a>
         </div>
         <header>
             <h1>Pharmacicie la famille</h1>
