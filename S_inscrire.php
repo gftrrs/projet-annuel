@@ -1,10 +1,13 @@
+<?php
+   include 'C:\Users\mon PC\OneDrive\Bureau\Projet_Annuel\projet-annuel\b_inscription.php'?> 
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>connexion</title>
+    <title>S'inscrire</title>
 </head>
 
 <body>
@@ -30,31 +33,16 @@
             <a href="panier.html"><img src="img/panier.png" ></a>
         </div>
     </div>
+    <div class="container">
+        <img src="img/connexion.png" alt="connexion" height ="200" >
 
-    <!DOCTYPE html>
-    <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Mon Compte</title>
-    </head>
-    <body>
-        <div class="account-section">
-            <ul class="options-list">
-                <li><a href="#">Sécurité</a></li>
-                <li><a href="#">Dépôt de prescription</a></li>
-                <li><a href="#">Historique</a></li>
-                <li><a href="#">Déconnexion</a></li>
-            </ul>
-            <div class="icon-container">
-                <img src="img/logo.jpg" alt="Icône de pharmacien">
-            </div>
-        </div>
-    </body>
-    </html>
-    
+        <a href="IPharmacien.html">
+      <div class="box">pharmacien</div>
+      
+         <a href="IMedecin.html"> 
+     <div class="box"> medecin</div>
+
         
-        </body>
-        </html>
-</body>
+      <a href="IClient.html"> 
+        <div class="box"> Client</div>
+    </div>

@@ -1,12 +1,16 @@
 <?php
-$databaseHost = 'localhost';
-$databaseName = 'ljourd04';
-$databaseUsername = 'ljourd04';
-$databasePassword = '22101353';
 
-// Connexion à la base de données
-$mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
-if (!$mysqli) {
-    die("Erreur de connexion : " . mysqli_connect_error());
+$dbname="mysql:host=localhost;dbname=ljourd04;charset=utf8";
+$username= "ljourd04";
+$userpassword= "22101353";
+
+try {
+    $bdd= new PDO($dbname,$username,$userpassword);
+    echo("connexion réussi");
+
 }
-?>
+catch(exception $e){
+    die("erreur : ".$e -> getMessage());
+
+}
+?> 

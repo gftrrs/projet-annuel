@@ -1,14 +1,17 @@
+<?php 
+include 'C:\Users\mon PC\OneDrive\Bureau\Projet_Annuel\projet-annuel\b_inscription.php'?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>connexion</title>
+    <title>S'inscrire</title>
 </head>
 
 <body>
-    <div class="top-bar">
+    <div class="top-bar"> <b></b>
         <div class="logo">
             <!-- Icône pour le logo -->
             <a href="projet.html"><img src="img/logo.jpg" ></a>
@@ -30,31 +33,19 @@
             <a href="panier.html"><img src="img/panier.png" ></a>
         </div>
     </div>
-
-    <!DOCTYPE html>
-    <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Mon Compte</title>
-    </head>
-    <body>
-        <div class="account-section">
-            <ul class="options-list">
-                <li><a href="#">Sécurité</a></li>
-                <li><a href="#">Dépôt de prescription</a></li>
-                <li><a href="#">Historique</a></li>
-                <li><a href="#">Déconnexion</a></li>
-            </ul>
-            <div class="icon-container">
-                <img src="img/logo.jpg" alt="Icône de pharmacien">
-            </div>
-        </div>
-    </body>
-    </html>
     
+    <div class="container1">
+        <img src="img/medecin.jpg" alt="connexion" height ="200" >
         
-        </body>
-        </html>
-</body>
+    <div class="container2">
+            <div class="icon"></div>
+            <form action="/submit" method="post">
+              <input type="text" placeholder="Prenom" required>
+              <input type="text" placeholder="Nom" required>
+              <input type="password" placeholder="Mot de passe" required>
+              <input type="password" placeholder="Confirmer mot de passe" required>
+              <input type="email" placeholder="Email" required>
+              <input type="text" placeholder="RPPS/ n° sécurite sociale" required>
+              <button type="submit">Confirmer</button>
+            </form>
+          </div>

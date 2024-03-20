@@ -1,5 +1,5 @@
 <?php 
-include 'C:\Users\mon PC\OneDrive\Documents\LUCAS\L3 GBI\projet annuel\connexionBDD.php'?>
+include 'C:\Users\mon PC\OneDrive\Bureau\Projet_Annuel\projet-annuel\connexionBDD.php'?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -29,7 +29,7 @@ include 'C:\Users\mon PC\OneDrive\Documents\LUCAS\L3 GBI\projet annuel\connexion
         &nbsp;&nbsp;&nbsp;
         <div class="cart">
             <!-- Icône pour l'espace de panier -->
-            <a href="#"><img src="img/panier.png" ></a>
+            <a href="panier.html"><img src="img/panier.png" ></a>
         </div>
     </div>
     <header>
